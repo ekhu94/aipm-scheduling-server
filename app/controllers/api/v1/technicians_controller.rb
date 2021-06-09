@@ -1,4 +1,4 @@
-class TechniciansController < ApplicationController
+class Api::V1::TechniciansController < ApplicationController
   before_action :set_technician, only: [:show, :update, :destroy]
 
   def index

@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_06_08_234507) do
   end
 
   create_table "work_orders", force: :cascade do |t|
-    t.datetime "time"
+    t.time "time"
     t.integer "duration"
     t.integer "price"
     t.bigint "technician_id", null: false
