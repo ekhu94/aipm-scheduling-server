@@ -29,7 +29,8 @@ module AipmSchedulingServer
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    config.time_zone = "Pacific Time (US & Canada)"
+    config.active_record.default_timezone = :local
+    # config.time_zone = "Pacific Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Only loads a smaller set of middleware suitable for API only apps.
